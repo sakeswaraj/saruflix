@@ -11,7 +11,7 @@ function index() {
       <main>
         {/* banner */}
         <section>
-          test``
+          test
           {/* row */}
           {/* row */}
           {/* row */}
