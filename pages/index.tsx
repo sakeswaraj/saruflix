@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Head from "next/head";
 
 function index() {
@@ -8,10 +9,10 @@ function index() {
         {/* favicon */}
       </Head>
       {/* Header */}
+      <Header />
       <main>
         {/* banner */}
         <section>
-          test
           {/* row */}
           {/* row */}
           {/* row */}
