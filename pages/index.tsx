@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Head from "next/head";
 import requests from "@/utils/requests";
 import { Movie } from "@/typings/types";
+import ContainerRow from "@/components/ContainerRow";
 
 interface HomeProps {
   netflixOriginals: Movie[];
@@ -38,11 +39,16 @@ const Home = ({
       <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
         {/* banner */}
         <Banner netflixOriginals={netflixOriginals} />
-        <section>
-          {/* row */}
-          {/* row */}
-          {/* row */}
-          {/* row */}
+        <section className="md:space-y-24">
+          <ContainerRow title="Trending Now" movies={trendingNow} />
+          <ContainerRow title="Top Rated" movies={topRated} />
+          <ContainerRow title="Action Thrillers" movies={actionMovies} />
+          {/* My List Component */}
+
+          <ContainerRow title="Comedies" movies={comedyMovies} />
+          <ContainerRow title="Scary Movies" movies={horrorMovies} />
+          <ContainerRow title="Romance Movies" movies={romanceMovies} />
+          <ContainerRow title="Documentaries" movies={documentaries} />
         </section>
       </main>
       {/* modal */}
